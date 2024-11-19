@@ -46,7 +46,7 @@ const Navbar = () => {
               className="flex items-center space-x-2"
             >
               <img 
-                src="/img/logo.png"
+                src="/img/logo.PNG"
                 alt="ME Skills"
                 className="h-12 md:h-14 w-auto object-contain"
               />

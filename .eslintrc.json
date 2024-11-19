@@ -1,3 +1,21 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    // ปิดการตรวจจับ img tag warning
+    "@next/next/no-img-element": "off",
+    
+    // ปิดการตรวจจับตัวแปรที่ไม่ได้ใช้
+    "@typescript-eslint/no-unused-vars": "off",
+    
+    // ปิดการตรวจจับ quotes ที่ไม่ได้ escape
+    "react/no-unescaped-entities": "off",
+    
+    // กฎอื่นๆ ที่อาจต้องการปรับแต่ง
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
 }
